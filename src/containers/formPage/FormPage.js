@@ -2,7 +2,7 @@ import React from 'react';
 
 const FormPage = () => {
  
-  return;
+  return <div />;
 }
 
 export default FormPage;

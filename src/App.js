@@ -1,12 +1,24 @@
-import './App.css';
+import React from 'react';
+import styled from 'styled-components';
 
-function App() {
+import routes from './routes';
+import Header from './components/header/Header';
+
+const StyledApp = styled.div`
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 70%;
+margin: 0 auto;
+background-color: #f9f9fa;
+`
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        test
-      </header>
-    </div>
+    <StyledApp>
+      <Header />
+      { routes() }
+    </StyledApp>
   );
 }
 
