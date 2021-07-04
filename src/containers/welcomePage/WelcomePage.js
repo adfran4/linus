@@ -2,12 +2,18 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { isEmpty } from 'lodash';
 
-import { fetchProjects } from '../../store/actions/projects'
+import { fetchProjects, receiveProject } from '../../store/actions/projects'
 import { Project } from '../../components';
 
 const WelcomePage = () => {
   const dispatch = useDispatch();
   const projects = useSelector(state => state.projects.collection);
+
+  const selectProject = id => {
+    const selected = projects.find(project => project.id === id);
+
+    dispatch(receiveProject(selected));
+  };
 
   useEffect(() => { 
     dispatch(fetchProjects()); 
@@ -18,6 +24,7 @@ const WelcomePage = () => {
       ? projects.map(project => 
           <Project key={project.id} 
                    project={project}
+                   onClick={() => selectProject(project.id)}
           />)
       : 'No projects available'
   );

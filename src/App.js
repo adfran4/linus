@@ -9,9 +9,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
-width: 70%;
-margin: 0 auto;
-background-color: #f9f9fa;
+width: 50%;
+margin: 5% auto;
+padding: 0 0 40px;
+background-color: #d0d7df;
 `
 
 const App = () => {

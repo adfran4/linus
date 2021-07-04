@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import StyledProject from './Project.styled';
 
-const Project = ({ project: { name, location } }) => {
+const Project = ({ project: { name, location }, onClick }) => {
   return(
-    <StyledProject>
+    <StyledProject onClick={onClick}>
       <Link to='/form'>
         <h3>{name}</h3>
         <h4>{location}</h4>
