@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 const StyledApp = styled.div`
 display: flex;
 flex-direction: column;
+align-items: center;
 text-align: center;
 width: 70%;
 margin: 0 auto;
