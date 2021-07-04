@@ -9,6 +9,11 @@ const StyledProject = styled.div`
   border: 1px solid #36354a;
   margin: 10px auto;
 
+  a {
+    text-decoration: none;
+    color: #36354a;
+  }
+  
   :hover {
     filter: brightness(0.7);
     cursor: pointer;
