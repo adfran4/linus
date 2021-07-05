@@ -10,8 +10,8 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <h1>Step {messages.step}</h1>
-      <h2>{messages.text}</h2>
+      <h1>Step { messages.step }</h1>
+      <h2>{ messages.text }</h2>
     </StyledHeader>
   );
 }

@@ -5,7 +5,7 @@ import StyledButton from './Button.styled';
 const Button = ({ children, onClick }) => {
   return (
     <StyledButton onClick={onClick}>
-      {children}
+      { children }
     </StyledButton>
   );}
 

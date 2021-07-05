@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSelector } from "react-redux";
+import { useSelector } from 'react-redux';
 
 import { sendInvestment } from '../../store/actions/investment';
 import { Button } from '../../components';
@@ -42,15 +42,15 @@ const ConfirmPage = () => {
     <React.Fragment>
       <StyledRow >
         <p>project:</p>
-        <p>{name}</p>
+        <p>{ name }</p>
       </StyledRow> 
       <StyledRow >
         <p>email:</p>
-        <p>{email}</p>
+        <p>{ email }</p>
       </StyledRow>
       <StyledRow >
         <p>amount:</p>
-        <p>{amount}</p>
+        <p>{ amount }</p>
       </StyledRow>
       <StyledRow>
         <input 
@@ -71,7 +71,7 @@ const ConfirmPage = () => {
           onChange={() => toggleRequestResult(!success)} 
         />
         <label htmlFor='html'>
-          Check if you want to failed the request (dev only)
+          Check if you want the request to fail (dev only)
         </label>
       </StyledRow>
       <StyledRow >
